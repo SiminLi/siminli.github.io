@@ -85,7 +85,6 @@
 
                 </p><p align="center">
                     <a href="https://scholar.google.com/citations?user=uo8l5ckAAAAJ&hl">Google Scholar</a> /
-                    <a href="https://github.com/SiminLi"> Github </a> /
                     <a href="./CV-SiminLi.pdf">CV</a>
 <!--                     <a href="https://www.zhihu.com/column/c_1343181023409074176">知乎专栏</a> -->
                 </p>
@@ -100,18 +99,17 @@
           <td>
           <heading>Research</heading>
             <p align="justify">
-		    I am interested in <strong>Trustworthy AI</strong> for <strong>multi-agent reinforcement learning (MARL)</strong>. My research goal is to make reinforcement learning safe and robust, including practical adversarial attack for RL/MARL, adversarial defense and algorithmic robustness testing. 
+		    I am interested in <strong>Trustworthy AI</strong> for <strong>multi-agent reinforcement learning (MARL)</strong>. My research goal is to make reinforcement learning safe and robust, including practical adversarial attack for RL/MARL, adversarial defense. Many of my works on robust MARL are tested on real world robot swarms. 
+            </p>
+            I am moving towards the research direction of trustworthy reinforcement learning from human feedback (RLHF). I am working on game theoretic methods to improve the capability and trustworthiness of RLHF.
             </p>
             Now my research mainly includes:
                 <ul>
                     <li>
-                        Adversarial attacks for MARL
-                    </li>
-                    <li>
                         Robust MARL
                     </li>
                     <li>
-                        Robust LLM-based autonomous agents
+                        Trustworthy RLHF
                     </li>
                 </ul>
 
@@ -129,15 +127,17 @@
        <tbody><tr>
           <td><heading>News</heading> 
 
-          <p style="font-size:13px"> <strong>[2023.09]</strong> One first-authored paper on defending Byzantine adversary of MARL submitted to ICLR 2024</p>
+          <p style="font-size:13px"> <strong>[2024.02]</strong> One co-authored paper on collision avoidance submitted to RAL 2024</p>
+        
+          <p style="font-size:13px"> <strong>[2024.02]</strong> One first-authored paper on robust regularization for MARL submitted to ICML 2024</p>
 
-          <p style="font-size:13px"> <strong>[2023.09]</strong> One co-authored paper on collision avoidance submitted to ICRA 2024</p>
+          <p style="font-size:13px"> <strong>[2024.01]</strong> One first-authored paper on defending Byzantine adversary of MARL accepted by ICLR 2024</p>
 
-          <p style="font-size:13px"> <strong>[2023.08]</strong> One first-authored paper on robust regularization for MARL submitted to AAAI 2024</p>
+          <p style="font-size:13px"> <strong>[2024.01]</strong> Two co-authored paper on robotics submitted to IJCAI 2024</p>
 
-          <p style="font-size:13px"> <strong>[2023.08]</strong> One co-authored paper on partial symmetry for MARL submitted to AAAI 2024</p>
+          <p style="font-size:13px"> <strong>[2024.01]</strong> One co-authored paper on partial symmetry for MARL accepted by AAAI 2024</p>
 
-          <p style="font-size:13px"> <strong>[2023.06]</strong> One first-authored paper on adversarial attack against MARL submitted to TNNLS</p>
+          <p style="font-size:13px"> <strong>[2023.09]</strong> One first-authored paper on adversarial attack against MARL submitted to IEEE TCYB</p>
 
           <p style="font-size:13px"> <strong>[2022.11]</strong> One first-authored paper on naturalness of physical world adversarial attack accepted by CVPR 2023</p>
 
@@ -145,7 +145,7 @@
 
           <p style="font-size:13px"> <strong>[2022.12]</strong> One co-authored survey on RL robustness accepted by Chinese Journal of Computers (In Chinese, top journal in China, CCF-A).</p>
         
-		  <p style="font-size:13px"> <strong>[2022.07]</strong> One first-authored paper on privacy protection of fingerprints submitted to IEEE TIP.</p>
+		  <p style="font-size:13px"> <strong>[2022.07]</strong> One first-authored paper on privacy protection of fingerprints submitted to IEEE TIP (currently under minor revision).</p>
             
 		  <p style="font-size:13px"> <strong>[2022.04]</strong> One co-authored paper on robustness testing of MARL accepted by CVPR 2022 workshop.</p>
                 
@@ -169,10 +169,12 @@
                 <p><a href="">
                 <papertitle>Byzantine Robust Cooperative Multi-Agent Reinforcement Learning as a Bayesian Game</papertitle></a>
                 <br><strong>Simin Li</strong>, Jun Guo, Jingqiao Xiu, Xin Yu, Jiakai Wang, Aishan Liu, Yaodong Yang, Xianglong Liu. <br><br>
-                Submitted to </em>ICLR</em>, 2024
+                Accepted by </em>ICLR</em>, 2024
                 <br>
-                <a href="https://arxiv.org/abs/2305.12872">pdf</a>
-                <p align="justify" style="font-size:13px"> We study robustness of MARL against Byzantine action perturbations by formulating it as a Bayesian game. We provide a rigorious formulation of this problem and an algorithm with strong empirical performance. </p>
+                <a href="https://openreview.net/forum?id=z6KS9D1dxt&referrer=%5Bthe%20profile%20of%20Xianglong%20Liu%5D(%2Fprofile%3Fid%3D~Xianglong_Liu3)">pdf</a>
+				 / <a href="https://github.com/DIG-Beihang/EIR-MAPPO"><font color="red">Project page</font></a>
+                
+                 <p align="justify" style="font-size:13px"> We study robustness of MARL against Byzantine action perturbations by formulating it as a Bayesian game. We provide a rigorious formulation of this problem and an algorithm with strong empirical performance. </p>
             <p></p>
         </td>
     </tr>
@@ -180,22 +182,23 @@
     <tr><td width="20%"><img src="./imgs/mir2.png" alt="AAAI2024" width="180" height = "110" style="border-style: none"></td>
         <td width="80%" valign="top">
                 <p><a href="">
-                <papertitle>MIR2: Towards Provably Robust Multi-Agent Reinforcement Learning by Mutual Information Regularization</papertitle></a>
-                <br><strong>Simin Li</strong>, Ruixiao Xu, Jun Guo, Pu Feng, Jiakai Wang, Aishan Liu, Yaodong Yang, Xianglong Liu, Weifeng Lv. <br><br>
+                <papertitle>Mutual Information Regularization is Provably Robust for Multi-Agent Reinforcement Learning</papertitle></a>
+                <br><strong>Simin Li</strong>, Ruixiao Xu, Jun Guo, Pu Feng, Jiakai Wang, Aishan Liu, Yaodong Yang, Xianglong Liu. <br><br>
                 Submitted to </em>AAAI</em>, 2024
                 <br>
                 <a href="https://arxiv.org/abs/2310.09833">pdf</a>
+                
                 <p align="justify" style="font-size:13px"> We proof that minimizing mutual information as a regularization term is minimizing a lower bound of robustness in MARL under all potential threat scenarios. </p>
             <p></p>
         </td>
     </tr>
 
-	<tr><td width="20%"><img src="./imgs/AMI.png" alt="IEEE TNNLS" width="180" height = "110" style="border-style: none"></td>
+	<tr><td width="20%"><img src="./imgs/AMI.png" alt="IEEE TCYB" width="180" height = "110" style="border-style: none"></td>
             <td width="80%" valign="top">
                  <p><a href="">
                  <papertitle>Attacking Cooperative Multi-Agent Reinforcement Learning by Adversarial Minority Influence</papertitle></a>
                  <br><strong>Simin Li</strong>,  Jun Guo, Jingqiao Xiu, Pu Feng, Xin Yu, Jiakai Wang, Aishan Liu, Wenjun Wu, Xianglong Liu. <br><br>
-                 Submitted to </em>IEEE TNNLS</em> (IF=14.255)
+                 Submitted to </em>IEEE TCYB</em> (IF=11.8)
                  <br>
                  <a href="https://arxiv.org/abs/2302.03322">pdf</a>
 				 / <a href="https://github.com/DIG-Beihang/AMI"><font color="red">Project page</font></a>
@@ -224,7 +227,7 @@
                  <p><a href="https://arxiv.org/abs/2208.10688">
                  <papertitle>Hierarchical Perceptual Noise Injection for Social Media Fingerprint Privacy Protection</papertitle></a>
                  <br><strong>Simin Li</strong>, Huangxinxin Xu, Jiakai Wang, Aishan Liu, Fazhi He, Xianglong Liu, Dacheng Tao. <br><br>
-                 Submitted to <em>IEEE TIP</em>(IF=10.86)
+                 Submitted to <em>IEEE TIP</em>(IF=10.86), currently under minor revision
                  <br>
                  <a href="https://arxiv.org/abs/2208.10688">pdf</a>
 				 / <a href="https://github.com/nlsde-safety-team/FingerSafe"><font color="red">Project page</font></a>
@@ -238,8 +241,8 @@
             <td width="80%" valign="top">
 	            <p><a href="https://openaccess.thecvf.com/content/CVPR2022W/ArtOfRobust/html/Guo_Towards_Comprehensive_Testing_on_the_Robustness_of_Cooperative_Multi-Agent_Reinforcement_CVPRW_2022_paper.html">
                     <papertitle>Towards Comprehensive Testing on the Robustness of Cooperative Multi-agent Reinforcement Learning</papertitle></a>
-                    <br>Jun Guo, Yonghong Chen, Yihang Hao, Zixin Yin, Yin Yu, <strong>Simin Li*</strong>. (* indicates corresponding author)<br>
-                    <em>CVPR Workshop</em>, 2022
+                    <br>Jun Guo, Yonghong Chen, Yihang Hao, Zixin Yin, Yin Yu, <strong>Simin Li (corresponding author)</strong>.<br>
+                    Accepted by <em>CVPR Workshop</em>, 2022
                     <br>
                     <a href="https://openaccess.thecvf.com/content/CVPR2022W/ArtOfRobust/html/Guo_Towards_Comprehensive_Testing_on_the_Robustness_of_Cooperative_Multi-Agent_Reinforcement_CVPRW_2022_paper.html">pdf</a>
                    
@@ -253,9 +256,33 @@
                     <p><a href="">
                     <papertitle>Leveraging Partial Symmetry for Multi-Agent Reinforcement Learning</papertitle></a>
                     <br>Xin Yu, Rongye Shi, Pu Feng, Yongkai Tian, <strong>Simin Li</strong>, Shuhao Liao, Wenjun Wu. <br><br>
-                    Submitted to </em>AAAI</em>, 2024
+                    Accepted by </em>AAAI</em>, 2024
                     <br>
                     <p align="justify" style="font-size:13px"> Symmetry has been used in MARL as a prior to incorporate domain knowledge in the environment, which enhance sample efficiency and performance. In this paper, we extend symmetry to paritial symmetry that considers uncertainties in environment with non-uniform field, including uneven terrain, wind, etc. </p>
+                <p></p>
+            </td>
+        </tr>
+
+        <tr><td width="20%"><img src="./imgs/stsn.png" alt="AAAI2024" width="180" height = "110" style="border-style: none"></td>
+            <td width="80%" valign="top">
+                    <p><a href="">
+                    <papertitle>Exploiting Spatio-Temporal Symmetry for Multi-Agent Reinforcement Learning</papertitle></a>
+                    <br>Xin Yu, Rongye Shi, Yongkai Tian, Li Wang, Tianhao Peng, <strong>Simin Li</strong>, Pu Feng, Wenjun Wu. <br><br>
+                    Submitted to </em>IJCAI</em>, 2024
+                    <br>
+                    <p align="justify" style="font-size:13px"> Symmetry are everywhere in real world, yet current MARL algorithms are agnostic of such symmetry by design. We extend the idea of symmetry to temporal domain, proposing spatial-temporal symmetry network, which includes adds a stronger induction bias during network training. </p>
+                <p></p>
+            </td>
+        </tr>
+
+        <tr><td width="20%"><img src="./imgs/lyapnov.png" alt="AAAI2024" width="180" height = "110" style="border-style: none"></td>
+            <td width="80%" valign="top">
+                    <p><a href="">
+                    <papertitle>Lyapunov-Informed Multi-Agent Reinforcement Learning</papertitle></a>
+                    <br>Pu Feng, Rongye Shi, Size Wang, Xin Yu, Junkang Liang, Jiakai Wang, <strong>Simin Li</strong>, Wenjun Wu. <br><br>
+                    Submitted to </em>IJCAI</em>, 2024
+                    <br>
+                    <p align="justify" style="font-size:13px"> Many MARL tasks specify certain goal states where special rewards are granted. The optimal policy in such task could be characterized by Lyapnov stability, where the policy asymptotically converge to the goal states from any initial, making the goal states stable equilibria. We formulate such process as a Lyapunov Markov game, and proof it facilitates the training process to find a stable suboptimal policy more easily and then converge to an optimal policy more efficiently. </p>
                 <p></p>
             </td>
         </tr>
@@ -264,7 +291,7 @@
            <td width="80%" valign="top">
                 <papertitle>SPF-RL: Multi-robots Collision Avoidance with Soft Potential Field informed reinforcement learning</papertitle>
                 <br> Pu Feng, Xin Yu, Wenjun Wu, Yongkai Tian, Junkang Liang, <strong>Simin Li</strong>.<br>
-                <em>Submitted to ICRA</em>, 2024.
+                <em> Submitted to RAL</em>, 2024.
                 <br>
                 <p align="justify" style="font-size:13px">Motivated by soft potential field theory, we propose an algorithm to avoid collision in robot swarms.  </p>
                    <p></p>
@@ -277,8 +304,29 @@
                     <br>Aishan Liu, Jun Guo, <strong>Simin Li</strong>, Yisong Xiao, Xianglong Liu, Dacheng Tao.<br>
                     <em>Accepted by Chinese Journal of Computers (计算机学报, top journal in China, CCF-A)</em>, 2023.
                     <br>
-                   
                     <p align="justify" style="font-size:13px">We provide a comprehensive survey of attack and defenses for deep reinforcement learning. We first analyze adversarial attacks from the perspectives of state-based, reward-based and action based attacks. Then, we illustrate adversarial defenses from adversarial training, adversarial detection, certified robustness and robust learning. Finally, we investigate interesting topics including adversaries for good and model robustness understanding for DRL, and highlights open issues and future challenges in this field.  </p>
+                   <p></p>
+            </td>
+        </tr>
+
+        <tr><td width="20%"><video width="320" height="240" controls><source src="./imgs/majority.mp4" type="video/mp4"></video></td>
+            <td width="80%" valign="top">
+                    <papertitle>Simulation Platform and Verification for Adversarial Multi-Agent Reinforcement Learning in Unmanned Aerial Vehicle Swarms (in Chinese)</papertitle>
+                    <br>Shuangcheng Liu, <strong>Simin Li (corresponding author)</strong>, Hainan Li, Jingqiao Xiu, Aishan Liu, Xianglong Liu.<br> 
+                    <em>Accepted by Journal of Cybersecurity (网络空间安全科学学报, Chinese journal on AI secuity)</em>, 2023.
+                    <br>
+                    <p align="justify" style="font-size:13px">We provide an AirSim-based unmanned aerial vehicle (UAV) simulator. Based on this simulator, we identify several critical adversarial attacks in multi-UAV combat.  </p>
+                   <p></p>
+            </td>
+        </tr>
+
+        <tr><td width="20%"><img src="./imgs/behavioral_dynamics.png" alt="PontTuset" width="180" style="border-style: none"></td>
+            <td width="80%" valign="top">
+                    <papertitle>Behavioral Dynamics and Safety Monitoring Methods for Intelligent Systems (in Chinese)</papertitle>
+                    <strong>Simin Li</strong>, Jiakai Wang, Aishan Liu, Xianglong Liu.<br>
+                    <em>Accepted by Journal of Cybersecurity (网络空间安全科学学报, Chinese journal on AI secuity)</em>, 2023.
+                    <br>
+                    <p align="justify" style="font-size:13px">We advocate the research on behavioral dynamics, which provides both microscopic and macroscopic understanding on adversarial vulnerability. We argue that combining the search of network science and game theory with AI safety could potentially benefit the understanding on micro information transmission and macro agent-wise intereaction. </p>
                    <p></p>
             </td>
         </tr>
@@ -287,9 +335,8 @@
             <td width="80%" valign="top">
                     <papertitle>Theories and methods for full life cycle intelligent systems security testing</papertitle>
                     <br>Jiakai Wang, Aishan Liu, <strong>Simin Li</strong>, Xianglong Liu, Wenjun Wu.<br>
-                    <em>Accepted by Artificial Intelligence Security (智能安全, top Chinese journal on AI secuity)</em>, 2023.
+                    <em>Accepted by Artificial Intelligence Security (智能安全, Chinese journal on AI secuity)</em>, 2023.
                     <br>
-                   
                     <p align="justify" style="font-size:13px">We propose our recent insight to test the security of an intelligent system from full life cycles, including vulnerabilities in model training, testing and deployment and their testing techniques. We offer insights on safety standards, safety testing platforms and sketch our method on security evaluation of autonomous driving.</p>
                    <p></p>
             </td>
